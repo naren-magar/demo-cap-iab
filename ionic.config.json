@@ -1,0 +1,7 @@
+{
+  "name": "demo-cap-iab",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
