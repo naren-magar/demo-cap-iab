@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { File } from '@ionic-native/file/ngx';
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  constructor(private file: File, private iab: InAppBrowser) {}
 
-  constructor() {}
+  private get url(): string {
+    return `${this.file.applicationDirectory}/public/assets/something.html`;
+  }
 
+  open() {
+    this.iab.create(this.url, '_blank').show();
+  }
 }
