@@ -9,6 +9,11 @@ import { File } from '@ionic-native/file/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
+import { FileChooser } from '@ionic-native/file-chooser/ngx';
+import { WebView } from '@ionic-native/ionic-webview/ngx';
+import { FilePath } from '@ionic-native/file-path/ngx';
+import { Camera } from '@ionic-native/camera/ngx';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -16,7 +21,11 @@ import { AppRoutingModule } from './app-routing.module';
   providers: [
     File,
     InAppBrowser,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    Camera,
+    FileChooser,
+    FilePath,
+    WebView,
   ],
   bootstrap: [AppComponent]
 })

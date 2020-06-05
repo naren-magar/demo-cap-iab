@@ -1,0 +1,25 @@
+<ion-header one-margin-top>
+    <ion-toolbar>
+        <ion-title>Uploader</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-grid>
+            <ion-row>
+            </ion-row>
+            <ion-grid>
+                <ion-button font-14 fill="outline" color="secondary" (click)="selectImage()">
+                    <ion-icon class="custom-edit-icon" size="small"></ion-icon>
+                    <span>Upload Receipt</span>
+                </ion-button>
+            </ion-grid>
+            <ion-grid text-align-center>
+        <span >
+            <img style="display:none;width:60px;height:60px;" id="smallImage" />
+            </span>
+            </ion-grid>
+        </ion-grid>
+    </ion-grid>
+</ion-content>

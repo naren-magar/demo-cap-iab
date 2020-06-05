@@ -5,8 +5,10 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
+  }, {
+    path: 'uploader',
+    loadChildren: () => import('./uploader/uploader.page.module').then( m => m.UploaderPageModule)
+  }, {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
