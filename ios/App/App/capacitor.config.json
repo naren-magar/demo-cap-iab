@@ -1,5 +1,5 @@
 {
-  "appId": "io.ionic.starter",
+  "appId": "com.worldpay.iQNowCert",
   "appName": "demo-cap-iab",
   "bundledWebRuntime": false,
   "npmClient": "npm",
